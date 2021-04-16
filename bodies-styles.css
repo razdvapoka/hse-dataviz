@@ -1,0 +1,16 @@
+body {
+  padding-top: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.buddy {
+  height: 50px;
+  border: 1px solid black;
+  background-color: red;
+}
+
+.buddy + .buddy {
+  margin-top: 10px;
+}
