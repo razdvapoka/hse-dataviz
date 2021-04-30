@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: sans-serif;
+      }
+      .colors {
+        display: flex;
+        margin-top: 50px;
+      }
+      .color {
+        width: 150px;
+        height: 150px;
+        border-radius: 9999px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+      }
+      .color-1 {
+        background-color: rebeccapurple;
+      }
+      .color-2 {
+        background-color: salmon;
+      }
+      .color-3 {
+        background-color: blanchedalmond;
+      }
+      .color-4 {
+        background-color: chartreuse;
+      }
+      h1 {
+        text-transform: uppercase;
+      }
+      .results {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-around;
+      }
+      .result {
+        width: 50px;
+        height: 50px;
+        border-radius: 9999px;
+        transition: transform 0.3s ease;
+      }
+      .results-box {
+        margin-top: 50px;
+        margin-bottom: 200px;
+      }
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="clear">clear results</button>
+    <h1>choose your color!</h1>
+    <div class="colors">
+      <div class="color color-1"></div>
+      <div class="color color-2"></div>
+      <div class="color color-3"></div>
+      <div class="color color-4"></div>
+    </div>
+    <details class="results-box">
+      <summary>vote results visualized:</summary>
+      <div class="results">
+        <div class="result color-1"></div>
+        <div class="result color-2"></div>
+        <div class="result color-3"></div>
+        <div class="result color-4"></div>
+      </div>
+    </details>
+    <hr />
+    <div class="images"></div>
+    <script src="client-stats.js"></script>
+  </body>
+</html>
